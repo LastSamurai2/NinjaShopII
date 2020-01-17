@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="sklep" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_ubior">
+   <top>
+      <HBox prefHeight="152.0" prefWidth="1241.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="152.0" prefWidth="757.0" />
+            <Label alignment="CENTER" prefHeight="152.0" prefWidth="1578.0" text="Ninja Shop" textFill="#e8e845">
+               <font>
+                  <Font name="Impact" size="78.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="152.0" prefWidth="757.0">
+               <children>
+                  <Button layoutX="32.0" layoutY="45.0" mnemonicParsing="false" onAction="#kategoria_koszyk" prefHeight="62.0" prefWidth="77.0" style="-fx-background-color: #e8e845;" text="Koszyk" textFill="#303030" />
+               </children>
+            </Pane>
+         </children></HBox>
+   </top>
+   <left>
+      <HBox accessibleRole="MENU" prefHeight="677.0" prefWidth="211.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="220.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bron_button" layoutX="-2.0" layoutY="2.0" mnemonicParsing="false" onAction="#kategoria_bron" prefHeight="62.0" prefWidth="213.0" style="-fx-background-color: #e8e845;" text="Broń" textFill="#303030">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="74.0" mnemonicParsing="false" onAction="#kategoria_ubior" prefHeight="62.0" prefWidth="213.0" style="-fx-background-color: #e8e845;" text="Ubiór" textFill="#303030">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="147.0" mnemonicParsing="false" onAction="#kategoria_obowie" prefHeight="62.0" prefWidth="213.0" style="-fx-background-color: #e8e845;" text="Obówie" textFill="#303030">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="221.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="213.0" style="-fx-background-color: #e8e845;" text="Wszystko" textFill="#303030">
+                     <font>
+                        <Font name="Impact" size="30.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="gowno" layoutX="79.0" layoutY="472.0" text="Label" textFill="RED" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="58.0" prefWidth="1241.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <HBox fx:id="kategoriaubior" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <ScrollPane prefHeight="567.0" prefWidth="1080.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="583.0">
+                     <children>
+                        <Pane fx:id="ubior01" prefHeight="100.0" prefWidth="964.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text fx:id="opis_ubior01" layoutX="283.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuvDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktu Długi opis produktu Długi opis produktuDługi " wrappingWidth="386.59765625" />
+                              <Text fill="#e11515" layoutX="283.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1229,65zł">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="145.0" fitWidth="252.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ubior01.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="786.0" layoutY="174.0" mnemonicParsing="false" onAction="#dodaj_ubior01" style="-fx-background-color: #e8e845;" text="Dodaj do koszyka" textFill="#303030" />
+                              <Text fx:id="nazwa_ubior01" layoutX="283.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strój ninja klasyczny">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="ubior02" prefHeight="252.0" prefWidth="100.0" AnchorPane.topAnchor="300.0">
+                           <children>
+                              <Text fx:id="nazwa_ubior02" layoutX="281.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strój ninja klasyczny">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="opis_ubior02" layoutX="283.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuvDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktu Długi opis produktu Długi opis produktuDługi " wrappingWidth="386.59765625" />
+                              <Text fill="#e11515" layoutX="283.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1229,65zł">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="145.0" fitWidth="252.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ubior02.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="786.0" layoutY="174.0" mnemonicParsing="false" onAction="#dodaj_ubior02" style="-fx-background-color: #e8e845;" text="Dodaj do koszyka" textFill="#303030" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="ubior03" prefHeight="252.0" prefWidth="100.0" AnchorPane.topAnchor="600.0">
+                           <children>
+                              <Text fx:id="nazwa_ubior03" layoutX="281.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Spodnie Hakama">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="opis_ubior03" layoutX="283.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuvDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktu Długi opis produktu Długi opis produktuDługi " wrappingWidth="386.59765625" />
+                              <Text fill="#e11515" layoutX="283.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1229,65zł">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="145.0" fitWidth="252.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ubior03.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="786.0" layoutY="174.0" mnemonicParsing="false" onAction="#dodaj_ubior03" style="-fx-background-color: #e8e845;" text="Dodaj do koszyka" textFill="#303030" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="ubior04" prefHeight="252.0" prefWidth="964.0" AnchorPane.topAnchor="900.0">
+                           <children>
+                              <Text fx:id="nazwa_ubior04" layoutX="281.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skarpetki ninja">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="opis_ubior04" layoutX="283.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktu Długi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktuvDługi opis produktuDługi opis produktuDługi opis produktuDługi opis produktu Długi opis produktu Długi opis produktuDługi " wrappingWidth="386.59765625" />
+                              <Text fill="#e11515" layoutX="283.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1229,65zł">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="145.0" fitWidth="252.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/ubior04.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="786.0" layoutY="174.0" mnemonicParsing="false" onAction="#dodaj_ubior04" style="-fx-background-color: #e8e845;" text="Dodaj do koszyka" textFill="#303030" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
